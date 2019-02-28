@@ -1,11 +1,28 @@
-* {
+body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: $s-size;
+  font-weight: 400;
   text-align: center;
   color: white;
-  height: 100%;
-  background: rgb(2,0,36);
-  background: linear-gradient(127deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  min-height: 100vh;
+  background: rgba(9,9,121,0.75);
+  background: linear-gradient(127deg, rgba(2,0,36,0.9) 0%, rgba(9,9,121,0.75) 35%, rgba(0,212,255,0.75) 100%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav > a {
+  background: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: rgba(9, 9, 121, 0.75);
+  text-decoration: none;
+}
+
+.active {
+  border-top: 0.25rem solid rgba(128, 0, 128, 0.75);
 }
 
 button {
