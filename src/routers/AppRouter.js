@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Dashboard } from '../components/Dashboard';
-import { AddExpense } from '../components/AddExpense';
-import { EditExpense } from '../components/EditExpense';
+import AddExpense from '../components/AddExpense';
+import EditExpense from '../components/EditExpense';
 import { Help } from '../components/Help';
 import { NotFound } from '../components/NotFound'
 

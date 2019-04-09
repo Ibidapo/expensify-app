@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
-import { removeExpense } from '../actions/expenses'
-
-const ExpenseListItem = ({ dispatch, id, description, amount, createdAt }) => (
+const ExpenseListItem = ({ id, description, amount, createdAt }) => (
   <li>
     <div>
-      <p>Description: {description}.</p>
-      <p>Amount: {amount} - createdAt: {createdAt}</p>
-      <button onClick={() => dispatch(removeExpense(id))} >Remove</button>
+      <h4><Link to={`/edit/${id}`}>{description}</Link></h4>
+      <p>=N= {amount} - Time: {createdAt}</p>
     </div>
   </li>
 );
@@ -22,4 +19,4 @@ ExpenseListItem.propTypes = {
   dispatch: PropTypes.func
 }
 
-export default connect()(ExpenseListItem);
+export default ExpenseListItem;
