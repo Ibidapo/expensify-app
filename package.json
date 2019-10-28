@@ -7,7 +7,8 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack-dev-server --mode development"
+    "dev-server": "webpack-dev-server --mode development",
+    "test": "jest"
   },
   "dependencies": {
     "acorn": "^6.1.1",
@@ -43,6 +44,7 @@
     "eslint-plugin-jest": "^22.3.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.7.1",
     "live-server": "^1.2.1",
     "node-sass": "4.5.3",
     "normalize.css": "7.0.0",
